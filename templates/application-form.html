@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>TEch STartUP</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Job Application</h1>
+<!-- your html goes here -->
+    <form action="/application" method="POST">
+        <p class="instruction">Thank you for your interest in applying to our company! Please fill out the following information and indicate which of our open positions you're applying for.</p>
+        <label for="firstname">First Name: </label><input id="firstname" type="text" name="firstname"><br>
+        <label for="lastname">Last Name: </label><input id="firstname" type="text" name="lastname"><br>
+        <label for="salaryreq">Salary Requirement: </label><input id="salaryreq" type="number" name="salaryreq" min="10" max="999"> K<br>
+        <label for="job">Please select for which position you're applying: </label>
+        <select name="jobtitle">
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="QA Engineer">QA Engineer</option>
+            <option value="Product Manager">Product Manager</option>
+        </select><br>
+        <input type="submit" value="Submit Application">
+    </form>
+
+
+{% endblock %}

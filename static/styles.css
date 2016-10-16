@@ -1,0 +1,31 @@
+/* Your styles can go here. *//* Your CSS goes here */
+.navbar {
+    display: block;
+}
+
+input {
+    background: yellow;
+}
+
+input[name="lastname"] {
+    font-weight: bolder;
+}
+
+h1 {
+    margin: 1em;
+}
+
+form {
+    margin: 2em;
+}
+
+.instruction {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    display: block;
+}
+
+.response {
+    margin: 2em;
+}
